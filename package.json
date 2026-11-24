@@ -1,0 +1,21 @@
+{
+  "name": "medistore-platform",
+  "version": "1.0.0",
+  "description": "MediStore - Master Pharmacy Management, Medicine Ordering, Inventory & Expiry Tracking SaaS",
+  "main": "server/src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/src/server.js",
+    "server": "node server/src/server.js",
+    "client": "npm --prefix client run dev",
+    "seed": "node server/src/scripts/seed.js",
+    "build": "npm --prefix client run build",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": ["pharmacy", "inventory", "fefo", "expiry-tracking", "prescriptions", "saas"],
+  "author": "MediStore Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

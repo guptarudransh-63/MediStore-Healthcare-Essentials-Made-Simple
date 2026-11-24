@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Production build outputs
+dist/
+client/dist/
+build/
+
+# Environment variables
+.env
+server/.env
+.env.local
+.env.*.local
+
+# Uploads / user generated media
+server/uploads/prescriptions/*
+!server/uploads/prescriptions/.gitkeep
+!server/uploads/prescriptions/sample-rx-demo.png
+server/uploads/products/*
+!server/uploads/products/.gitkeep
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System / OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Editor directories
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
